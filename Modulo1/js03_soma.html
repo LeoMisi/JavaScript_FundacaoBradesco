@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="FormSoma" action="" method="POST">
+      Digite o primeiro número: <input type="text" name="numero1" /> <br />
+      Digite o segundo número: <input type="text" name="numero2" /> <br />
+      <input type="Button" name="btn_soma" value="Somar" onclick="FuncSoma()" />
+      <input type="reset" name="btn_cancela" value="Cancelar" />
+    </form>
+
+    <script language="JavaScript">
+      /* Definição das variáveis */
+      var numero1;
+      var numero2;
+      var soma;
+
+      function FuncSoma() {
+        /* Entrada de Dados */
+
+        numero1 = parseInt(document.FormSoma.numero1.value);
+        numero2 = parseInt(document.FormSoma.numero2.value);
+
+        // numero1 = document.FormSoma.numero1.value;
+        // numero2 = document.FormSoma.numero2.value;
+
+        /* Processamento de Dados*/
+        var soma = numero1 + numero2;
+        // var soma = parseInt(numero1) + parseInt(numero2);
+
+        /* Saída de Dados */
+        window.alert("O resultado da soma é = " + soma);
+        // window.alert(soma);
+      }
+    </script>
+  </body>
+</html>

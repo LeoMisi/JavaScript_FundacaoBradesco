@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var numero1;
+      var numero2;
+      var numero3;
+
+      numero1 = parseInt(window.prompt("Digite o primeiro valor:"));
+      numero2 = parseInt(window.prompt("Digite o segundo Valor:"));
+
+      document.write("número 1 digitado= " + numero1);
+      document.write("<br>numero 2 digitado=" + numero2);
+
+      if (numero1 > numero2) {
+        numero3 = numero1;
+        numero1 = numero2;
+        numero2 = numero3;
+      }
+      document.write(
+        `<p><b>Classificação em ordem crescente</b> ${numero1} e ${numero2}`
+      );
+    </script>
+  </body>
+</html>
